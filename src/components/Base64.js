@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const ImageUploadForm = () => {
+  // states
   const [selectedFile, setSelectedFile] = useState(null);
   const [base64String, setBase64String] = useState("");
   const [uploadClicked, setUploadClicked] = useState(false);
   const userId = 2; // Replace with the actual user ID
 
+  // useEffect
   useEffect(() => {
     if (uploadClicked && base64String) {
       handleImageUpload();
@@ -14,6 +16,7 @@ const ImageUploadForm = () => {
     }
   }, [uploadClicked, base64String]);
 
+  // function to change file to string/url
   const handleFileChange = (event) => {
     // prevents refresh
     event.preventDefault();
@@ -29,10 +32,12 @@ const ImageUploadForm = () => {
     }
   };
 
+  // function to handle upload click
   const handleUploadClick = () => {
     setUploadClicked(true);
   };
 
+  // function to upload image
   const handleImageUpload = async () => {
     try {
       // Assuming you want to use the base64String as imageUrl and userId as user_id
