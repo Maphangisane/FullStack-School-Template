@@ -1,0 +1,15 @@
+### Algorithm
+
+create a form to add a picture - Done
+connect the form to dab using the add image API - Done
+
+create a table to display a list of pictures 
+add the view, edit and delete image icons
+view -  will display teh slelected image by id 
+edit - finds picture by id and edit image url
+delete - find image by id and delete image
+
+# Gallery 
+create a view image component 
+create a pagination to scroll thru the images
+
