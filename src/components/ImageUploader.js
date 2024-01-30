@@ -49,6 +49,8 @@ const ImageUploader = ({ onUpload }) => {
       if (apiResponse.status === 201) {
         console.log("Image uploaded successfully:", apiResponse.data);
         onUpload();
+        window.location.reload(); // loads current pages of the window
+        // window.location.href = "" // redirection
       } else {
         console.error(
           "Unexpected status code:",
