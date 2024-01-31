@@ -1,1 +1,3 @@
-## FullStack-School-Templete
+### FullStack-School-Template-API
+
+by Thabang Maphangisane
